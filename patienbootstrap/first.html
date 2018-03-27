@@ -1,0 +1,196 @@
+<html>
+<head>  
+    <title> </title>
+    <link rel="stylesheet" href="firstcss.css" type="text/css">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div>
+    
+    <div id="panel-left-bar">
+        <div id="logo"> logo </div> <br/>
+             <ul class="nav-list">
+                 <li class="nav-item">
+                     <img src="" alt=""> </br> <a class="active"  href=""> Registration   </a>   </li> <br/>
+                 <li class="nav-item">
+                     <img src="" alt=""> </br> <a href=""> Discharge  </a> </li> </br>
+                 <li class="nav-item"> 
+                     <img src="" alt=""> </br> <a href=""> New Born Registration   </a>  </li> </br>
+                 <li class="nav-item"> 
+                      <img src="" alt=""> </br> <a href=""> Discharge Summary   </a> </li> <br/>
+                 <li class="nav-item"> 
+                     <img src="" alt=""> </br> <a href=""> View Record   </a>  </li> <br/>
+                 <li class="nav-item"> 
+                     <img src="" alt=""> </br> <a href=""> Employee Productivity  </a>  </li>   <br/>
+            
+             </ul>
+             <br/>
+             <br/>
+                <div id="icon"> 
+                 <p> <span> setup </span>      
+                  <span> user    </span>       </p>
+               </div>
+        
+    </div>
+    
+</div>
+
+
+<body>
+<div id="main">    
+    <!-- start hearder---->   
+    <div id="header">      
+             &nbsp &nbsp  <span class="fa fa-bars" >  </span>
+                <span id="name" style=" float: right; margin-right:10px; margin-top: 5px;">   Javed Ahmed <img src="" alt=""  style=" "> &nbsp &nbsp 
+                    <span id="login" style=" float: right; margin-right:10px; margin-top: 5px; "> login     </span>
+        
+         </div>
+    <!--- end header ------>      
+         <div id="nav">  
+            
+              <a class="active" href="#Save">Save</a>
+              <a href="#Edit">Edit</a>
+              <a href="#Print">Print</a>
+              <a href="#Print wrist brand"> Print wrist brand</a>     
+                     
+        </div>
+        <!--end of header---->
+     
+            <!-----line---------->
+            <div id="line">   
+             
+
+            </div>
+             <!--------end line-------------->          
+
+            <!-----start patient information---->
+
+                <div class="white"> 
+                    <div class="information"> Patient information </div>
+                        <table>
+                        <div id="table">  
+                            
+                            <tr>
+                                <td rowspan="2"> image   </td>
+                                <td>   MR NO                   </td> 
+                                <td>   ADDMISSION / REF NO     </td> 
+                                <td>   FIRST NAME </td>
+                                <td>   MIDDLE NAME             </td>
+                                <td>    LAST NAME               </td>
+                             </tr>
+
+                         <!-- row 2--> 
+                            <tr>
+                               <td> GENDER   
+                                   <br/>
+                                   <input type="radio" name="gender" id="male" value="M" />
+                                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="female" value="F" />
+                                                    <label for="female">Female</label><br />
+                                     </td>
+                               <td> S/O    </td>
+                               <td> DATE OF BIRTH
+                                   </br>
+                                   <input type="date">
+                                     </td>       
+                               <td>  NIC NO       </td>
+                               <td>         </td>
+
+                            </tr>
+                    <!-- end first row-->
+                    <tr>        
+                        <td rowspan="2">     scan finger       </td>   
+                         <td colspan="2">   ADDRESS-1        </td>
+                         <td colspan="2">   ADDRESS-11       </td>
+                         <td>   COUNTRY            </td>
+                    
+                    </tr>
+                        <tr>
+        
+                        <td>  CITY          </td>
+                        <td colspan="2">  ADDMISSION DATE & TIME        
+                            </br>
+                               <input type="date">
+                              </td>
+                        <td colspan="2">  REGISTRATION DATE & TIME       
+                              </br>
+                               <input type="date">
+                              </td>
+
+                        <!--- <td>       </td>
+                        <td>   <span> <input type="text"  name="date & time">         </span>      </td>
+                        <td>   <span> <input type="text"  name="date & time">         </span>       </td>---->
+                        
+                    </tr>
+                    
+                 <!------ end of second row---->
+                 
+
+                  <tr>  
+                        <td rowspan="3"> MR NO OR CODE       </td>
+                        <td rowspan="3">  CONTACT NAME       </td>
+                        <td rowspan="3"  colspan="3">  CONTACT NO </td>
+                        <td rowspan="3">  EMAIL ADDRESS           <span> CHECK CIRCLE///   </span>  </td>
+                  </tr>
+
+                
+              <!------END OF tdIRD ROW ---->
+
+                             </div>
+                             </table>
+               </div> 
+    
+ <!----------   <div class="white">      
+      <table>   
+          <div class:"Hospital">  Hospital Information </div>
+
+          <tr>
+             <td>   SERVICE    </td>
+             <td>   WARD       </td>
+             <td>   CONSULTANT NAME    </td>
+             <td colspan="5">   BED NO       </td>
+          </tr>
+            <tr>  
+                <td>       </td>
+                <td>    Surgery     </td>
+                <td>    Akram Ahmed        </td>
+                 <td colspan="3"> <span> log icon   </span>        </td>
+          </tr>
+
+
+      </table>
+   </div>-------------------------------->
+
+<!----------start second white------------>
+<div class="white">
+    <div class="hospital"> Hospital Information   </div>    
+        <table>     
+             <tr>
+             <td>   SERVICE    </td>
+             <td>   WARD       </td>
+             <td>   CONSULTANT NAME    </td>
+             <td colspan="3">   BED NO       </td>
+          </tr>
+            <tr>  
+                <td>       </td>
+                <td>    Surgery     </td>
+                <td>    Akram Ahmed        </td>
+                 <td colspan="3">       </td>
+          </tr>
+
+        </table>
+
+
+</div>  <!---- end second white---->
+
+
+
+
+
+
+</div>  <!-- end of main div-->
+</body>
+
+
+
+</html>

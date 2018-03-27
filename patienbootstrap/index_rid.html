@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Working Zaasviya</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="rida.css">
+  <link rel="stylesheet" href="index2css.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+<div class="container">
+            <div class="row">
+                <div class="col-sm-2 left_bar vertical" style="padding:0;">
+                   <center> <div style="padding: 15px 0; background-color: green;"> LOGO</div></center>
+                   <a href="" class="active">Registration</a>
+                   <a href="">Discharge</a>
+                   <a href="">New born registration</a>
+                   <a href="">Discharge Summary</a>
+                   <a href="">View record</a>
+                   <a href="">Employee Productivity</a>
+
+
+                   <div class="row" >
+                         <div id="icon"> 
+                <i class="fa fa-cog"> <br> Setup</i>     
+                  <i class="fa fa-user"> <br> Users  </i>  
+                  
+               </div> <!-------------end of icon---------------------->
+                   </div>
+                </div><!--COL-SM-2---->
+
+
+
+
+                <div class="col-sm-8 right_bar" style="padding: 0;">
+                    <div class="container">
+                    <div class="row" style="background-color: grey;max-height: 45px; padding: 5px 0 0 0">
+                       <div class="col-sm-2"><i class="fa fa-bars"></i> </div>
+                       <div class="col-sm-2"></div>
+                       <div class="col-sm-2"></div>
+                       <div class="col-sm-2"></div>
+                       <div class="col-sm-2"> <p style="float: left">Javed Ahmed <img src="images/navjpg.jpg" alt="" class="img-circle img-responsive float-right" width="25" height="25"> </p>
+            </div>
+                       <div class="col-sm-2"><p>Log-out icon: <i class="glyphicon glyphicon-log-out"></i></p></div>
+                    </div>
+                     </div>
+
+                     <div class="row">
+                         <div class="container">
+      <div id="nav">  
+            
+              <a class="active" href="#Save">Save</a>
+              <a href="#Edit">Edit</a>
+              <a href="#Print">Print</a>
+              <a href="#Print wrist brand"> Print wrist brand</a>  
+              <div class="form-check nav navbar-nav navbar-right" style="float: right;margin: 10px;">
+                <label class="form-check-label">
+                   <input class="form-check-input" type="checkbox"> Unknown Patient 
+                </label>
+              </div>              
+        </div><!------------------------end of nav------------------------------------>
+                     </div>
+                    </div><!--row nav end-->
+ <div id="line2">    </div>
+                    <div class="row">
+                         <!-------------------end of line---------------------->
+<!-------------------------start Patient information---------------------------------->
+
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">Patient Informationl   Edit icon: <span class="glyphicon glyphicon-menu-up"></span></div>
+  </div> <!------------end of panel-------->
+
+  <table class="table table-bordered">
+                             <tr>
+                                <td rowspan="2"> image   </td>
+                                <td>   MR NO                   </td> 
+                                <td>   ADDMISSION / REF NO     </td> 
+                                <td>   FIRST NAME </td>
+                                <td>   MIDDLE NAME             </td>
+                                <td>    LAST NAME               </td>
+                             </tr>
+                             <tr>
+                               <td> GENDER   
+                                   <br/>
+                                   <input type="radio" name="gender" id="male" value="M" />
+                                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="female" value="F" />
+                                                    <label for="female">Female</label><br />
+                                     </td>
+                               <td> S/O    </td>
+                               <td> DATE OF BIRTH
+                                   </br>
+                                   <input type="date">
+                                     </td>       
+                               <td>  NIC NO       </td>
+                               <td>         </td>
+
+                            </tr>
+                             <tr>        
+                        <td rowspan="2">     scan finger       </td>   
+                         <td colspan="2">   ADDRESS-1        </td>
+                         <td colspan="2">   ADDRESS-11       </td>
+                         <td>   COUNTRY            </td>
+                    
+                    </tr>
+                        <tr>
+        
+                        <td>  CITY          </td>
+                        <td colspan="2">  ADDMISSION DATE & TIME        
+                            </br>
+                               <input type="date">
+                              </td>
+                        <td colspan="2">  REGISTRATION DATE & TIME       
+                              </br>
+                               <input type="date">
+                              </td>
+                        </tr>
+                        <tr>  
+                        <td> MR NO OR CODE       </td>
+                        <td>  CONTACT NAME       </td>
+                        <td colspan="3">  CONTACT NO </td>
+                        <td>  EMAIL ADDRESS           <span> CHECK CIRCLE///   </span>  </td>
+                  </tr>
+  </table>
+</div> <!---------------------------------end of Patient information---------------------------------->
+<!--------------------------start of hospital information---------------------------------->
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">Hospital Informationl   Edit icon: <span class="glyphicon glyphicon-menu-up"></span></div>
+  </div> <!------------end of panel-------->
+            <table class="table table-bordered">
+               <tr>
+             <td>   SERVICE    </td>
+             <td>   WARD       </td>
+             <td>   CONSULTANT NAME    </td>
+             <td colspan="3">   BED NO       </td>
+          </tr>
+            <tr>  
+                <td>       </td>
+                <td>    Surgery     </td>
+                <td>    Akram Ahmed        </td>
+                 <td colspan="3">       </td>
+          </tr>
+           </table>
+
+    </div><!-----------------------end of hospital information---------------------------------->
+
+
+                    </div><!--row table end-->
+                
+                </div><!--col-sm-10-->
+            </div><!--row-->
+
+
+</div><!-- Container-->
+
+</body>
+</html>
