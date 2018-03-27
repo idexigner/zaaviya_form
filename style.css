@@ -59,10 +59,28 @@ i, span {
 
 #sidebar {
     min-width: 250px;
-    max-width: 250px;
+    max-width: 500px;
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
+    position: relative;/*Change*/
+}
+#sidebar .bottom{
+    position: absolute;
+    bottom: 10px;
+    height: 100px;
+    /* background-color: blue; */
+    width:100%;
+    
+}
+.bottom .fifty{
+    width: 48%;
+    text-align: center;
+    float: left;
+    display: inline;
+}
+.bottom .fifty img{
+    display: block;
 }
 
 #sidebar.active {
@@ -81,6 +99,11 @@ i, span {
 
 #sidebar ul li a {
     text-align: left;
+}
+#sidebar ul li a img {
+    /* float: left; */
+    text-align: center;
+    display: block;
 }
 
 #sidebar.active ul li a {
@@ -130,8 +153,10 @@ i, span {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
+    background: #6d7fcc;
+    color:#fff;
+    /* color: #7386D5;
+    background: #fff; */
 }
 #sidebar ul li a i {
     margin-right: 10px;
@@ -190,6 +215,40 @@ a.article, a.article:hover {
 
 
 
+#nav2 {
+    overflow: hidden;
+    background-color:whitesmoke;
+    margin-top: 15px;
+    width: 100%;
+    
+  }
+  #nav2 a {
+    float: left;
+    color:lightgray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    
+  }
+  #nav2 a.active {
+   
+    color: black;
+  }
+
+  #content_table{
+      background-color: white;
+
+  }
+
+  #line2{
+    height: 4px ;
+    background-color: blue;
+    width: 100%;
+    margin: 15px 0;
+    z-index: 100;
+}
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -197,6 +256,7 @@ a.article, a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    width:100%;
 }
 
 
@@ -209,6 +269,7 @@ a.article, a.article:hover {
         max-width: 80px;
         text-align: center;
         margin-left: -80px !important ;
+        position: relative;
     }
     a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
         top: auto;
@@ -255,4 +316,40 @@ a.article, a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+}
+
+
+
+
+
+.modal {
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) { 
+    .modal:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 100%;
+    }
+  }
+  
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+
+  .panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
 }
